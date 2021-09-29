@@ -1,0 +1,5 @@
+﻿  Source.cpp
+C:\Users\Nikina\source\repos\lab\Lab4\lab4.4\lab4.4\lab4.4\Source.cpp(13,18): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+C:\Users\Nikina\source\repos\lab\Lab4\lab4.4\lab4.4\lab4.4\Source.cpp(14,18): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+C:\Users\Nikina\source\repos\lab\Lab4\lab4.4\lab4.4\lab4.4\Source.cpp(15,17): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+  lab4.4.vcxproj -> C:\Users\Nikina\source\repos\lab\Lab4\lab4.4\lab4.4\Debug\lab4.4.exe
