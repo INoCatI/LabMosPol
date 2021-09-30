@@ -1,0 +1,3 @@
+﻿  Source.cpp
+C:\Users\Nikina\source\repos\lab\lab6\lab6.6\lab6.6\Source.cpp(12,9): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+  lab6.6.vcxproj -> C:\Users\Nikina\source\repos\lab\lab6\lab6.6\Debug\lab6.6.exe
