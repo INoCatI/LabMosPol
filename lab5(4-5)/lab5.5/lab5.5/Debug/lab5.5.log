@@ -1,5 +1,0 @@
-﻿  5.5.cpp
-C:\Users\Nikina\source\repos\lab\lab5\lab5.5\lab5.5\lab5.5\5.5.cpp(9,9): warning C4101: d1: неиспользованная локальная переменная
-C:\Users\Nikina\source\repos\lab\lab5\lab5.5\lab5.5\lab5.5\5.5.cpp(9,17): warning C4101: D: неиспользованная локальная переменная
-C:\Users\Nikina\source\repos\lab\lab5\lab5.5\lab5.5\lab5.5\5.5.cpp(9,13): warning C4101: d2: неиспользованная локальная переменная
-  lab5.5.vcxproj -> C:\Users\Nikina\source\repos\lab\lab5\lab5.5\lab5.5\Debug\lab5.5.exe
