@@ -1,0 +1,5 @@
+﻿  Source.cpp
+C:\Users\1\source\repos\Project32\Project32\Source.cpp(54,19): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+C:\Users\1\source\repos\Project32\Project32\Source.cpp(55,19): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+C:\Users\1\source\repos\Project32\Project32\Source.cpp(56,18): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+  Project32.vcxproj -> C:\Users\1\source\repos\Project32\Debug\Project32.exe
