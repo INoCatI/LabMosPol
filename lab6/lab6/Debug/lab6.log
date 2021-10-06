@@ -1,0 +1,6 @@
+﻿  6.cpp
+C:\Users\Nikina\source\repos\lab\lab6\lab6\6.cpp(50,37): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+C:\Users\Nikina\source\repos\lab\lab6\lab6\6.cpp(56,49): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+C:\Users\Nikina\source\repos\lab\lab6\lab6\6.cpp(64,10): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+C:\Users\Nikina\source\repos\lab\lab6\lab6\6.cpp(75,10): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+  lab6.vcxproj -> C:\Users\Nikina\source\repos\lab\lab6\Debug\lab6.exe
