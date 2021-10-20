@@ -1,0 +1,4 @@
+﻿  Source.cpp
+C:\Users\Nikina\source\repos\lab\lab7++\lab7+\Source.cpp(3,22): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\Nikina\source\repos\lab\lab7++\lab7+\Source.cpp(55,22): warning C4554: "&": проверьте приоритет операторов на ошибки; для уточнения приоритета используйте скобки
+  lab7+.vcxproj -> C:\Users\Nikina\source\repos\lab\lab7++\Debug\lab7+.exe
