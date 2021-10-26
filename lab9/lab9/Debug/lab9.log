@@ -1,0 +1,8 @@
+﻿  Source.cpp
+C:\Users\Nikina\source\repos\lab\lab9\lab9\Source.cpp(308,22): warning C4101: a: неиспользованная локальная переменная
+C:\Users\Nikina\source\repos\lab\lab9\lab9\Source.cpp(308,25): warning C4101: b: неиспользованная локальная переменная
+C:\Users\Nikina\source\repos\lab\lab9\lab9\Source.cpp(308,16): warning C4101: S: неиспользованная локальная переменная
+C:\Users\Nikina\source\repos\lab\lab9\lab9\Source.cpp(308,19): warning C4101: s: неиспользованная локальная переменная
+C:\Users\Nikina\source\repos\lab\lab9\lab9\Source.cpp(308,28): warning C4101: c: неиспользованная локальная переменная
+C:\Users\Nikina\source\repos\lab\lab9\lab9\Source.cpp(308,31): warning C4101: K: неиспользованная локальная переменная
+  lab9.vcxproj -> C:\Users\Nikina\source\repos\lab\lab9\Debug\lab9.exe
