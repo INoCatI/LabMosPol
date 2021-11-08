@@ -1,0 +1,4 @@
+﻿  Source.cpp
+C:\Users\Nikina\source\repos\lab\lab13\lab13\Source.cpp(51,18): warning C4244: +=: преобразование "double" в "int", возможна потеря данных
+C:\Users\Nikina\source\repos\lab\lab13\lab13\Source.cpp(61,19): warning C4244: +=: преобразование "double" в "int", возможна потеря данных
+  lab13.vcxproj -> C:\Users\Nikina\source\repos\lab\lab13\Debug\lab13.exe
