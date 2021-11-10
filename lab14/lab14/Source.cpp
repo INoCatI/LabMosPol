@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-int pynkt, a, b, n, k, s, i;
+int pynkt, a, b, c, n, k, s, i;
 double s1 = 1000, s2 = 1000, x;
 
 int main()
@@ -30,7 +30,7 @@ int main()
 		cout << "Enter a="; cin >> a;
 		cout << "Enter b="; cin >> b;
 		n = 0;
-		if (b>a/2)
+		if (b > a / 2)
 		{
 			cout << "Length of the unoccupant part of A is " << a - b << endl;
 		}
@@ -39,13 +39,13 @@ int main()
 			{
 				n += b;
 			}
-			if (n==a)
+			if (n == a)
 			{
 				cout << "Length of the unoccupant part of A is " << 0 << endl;
 			}
 			else {
 				n -= b;
-				cout << "Length of the unoccupant part of A is " << a-n << endl;
+				cout << "Length of the unoccupant part of A is " << a - n << endl;
 			}
 		}
 		break;
@@ -53,12 +53,12 @@ int main()
 	case 3:
 		cout << "Enter a number: "; cin >> n;
 		s = 0;
-		for (i = 1; n>=s;i)
+		for (i = 1; n >= s; i)
 		{
 			s += i;
 			i += 2;
 		}
-		cout << "K=" << i-2<<endl;
+		cout << "K=" << i - 2 << endl;
 		cout << "Sum=" << s << endl;
 		break;
 
@@ -66,7 +66,7 @@ int main()
 		int p;
 		i = 1;
 		cout << "Enter a procentage: \n"; cin >> p;
-		x = 1 + 0.01*p;
+		x = 1 + 0.01 * p;
 		for (s1, i; s2 < 1100; i++)
 		{
 			s2 = s1 * pow(x, i);
@@ -78,18 +78,37 @@ int main()
 		cout << "Enter two numbers:\n" <<
 			"A="; cin >> a;
 		cout << "B="; cin >> b;
-		while (a!=b)
+		while (a != b)
 		{
 			if (a > b)
 			{
 				a = a - b;
 			}
-			else 
+			else
 			{
 				b = b - a;
 			}
 		}
 		cout << "The greatest common divisor is " << a << endl;
+		break;
+
+	case 6:
+		cout << "Enter a number: \n"; cin >> n;
+		a = 0;
+		b = 1;
+		for (i = 2; a+b<n ; i++)
+		{
+			c = a + b;
+			a = b;
+			b = c;
+		}
+		if ((a+b)==n)
+		{
+			cout << n << " is Fibonaacci number, his serial number is " << i << endl;
+		}
+		else {
+			cout << n << " isn't a Fibonaacci number" << endl;
+		}
 		break;
 
 	default:
