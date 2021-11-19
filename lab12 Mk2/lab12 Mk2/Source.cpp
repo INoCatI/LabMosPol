@@ -252,7 +252,7 @@ int main()
 			cout << "Robot is moving to the West now.\n";
 			break;
 		case 'E':
-			cout << "Robot is moving to the West now.\n";
+			cout << "Robot is moving to the East now.\n";
 			break;
 		default:
 			break;
