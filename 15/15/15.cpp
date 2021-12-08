@@ -145,11 +145,11 @@ int main()
 
 		if (N % 2 > 0)
 		{
-			cout << "The number is odd, which means its factorial is" << N << " is " << Fact2(N) << endl;
+			cout << "The number is odd, which means its factorial is "<< Fact2(N) << endl;
 		}
 		else
 		{
-			cout << "The number is even, which means its factorial is" << N << " is " << Fact2(N) << endl;
+			cout << "The number is even, which means its factorial is " << Fact2(N) << endl;
 		}
 		break;
 
