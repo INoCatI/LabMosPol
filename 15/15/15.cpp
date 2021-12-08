@@ -114,6 +114,7 @@ int main()
 		break;
 
 	case 3:
+		int a[S];	
 		int r1, r2;
 		cout << "Enter radiuses:\n\n";
 		for (int i = 0; i < 3; i++)
@@ -125,6 +126,17 @@ int main()
 			cout << "<=======================>\n";
 
 		}
+			/*for (int i = 1; i <= S+1; i+=2)
+		{
+			cout << "Enter big radius:"; cin >> a[i - 1];
+			cout << "Enter small radius:"; cin >> a[i];
+			cout << "\n\n";
+		}
+
+		for (int i = 1; i <= S+1; i+=2)
+		{
+			cout << "Square of the ring is equal to " << RingS(a[i - 1], a[i]) << endl << endl;
+		}*/
 
 		break;
 
