@@ -111,9 +111,6 @@ int main()
 
 		cout << "Area of a ring is " << RingS(r1, r2) <<"\n"<< endl;
 
-		cout << "Areas of given rings is:\n\n" << "First circles.\nRadius of a small circle is 3, of a big one is 5. Area of a ring between them is " << RingS(5, 3) <<"\n"<< endl;
-		cout<<"Second circles.\nRadius of a small circle is 10, of a big one is 15. Area of a ring between them is " << RingS(12, 10) <<"\n"<< endl;
-		cout << "Second circles.\nRadius of a small circle is 7, of a big one is 9. Area of a ring between them is " << RingS(9, 7) <<"\n"<< endl;
 		break;
 
 	case 4:
@@ -146,7 +143,14 @@ int main()
 		int N;
 		cout << "Enter a number \nN=";cin >> N;
 
-		cout << "Factorial of the number " << N << " is " << Fact2(N) << endl;
+		if (N % 2 > 0)
+		{
+			cout << "The number is odd, which means its factorial is" << N << " is " << Fact2(N) << endl;
+		}
+		else
+		{
+			cout << "The number is even, which means its factorial is" << N << " is " << Fact2(N) << endl;
+		}
 		break;
 
 	default:
