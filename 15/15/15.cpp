@@ -2,6 +2,8 @@
 
 using namespace std;
 int A, B;
+const int S = 5;
+
 
 int PowerA3(int b)
 {
@@ -14,11 +16,11 @@ int SignX(int x)
 	{
 		return x = -1;
 	}
-	if(x==0) 
+	if (x == 0)
 	{
 		return x = 0;
 	}
-	if (x>0)
+	if (x > 0)
 	{
 		return x = 1;
 	}
@@ -33,19 +35,19 @@ double RingS(int r1, int r2)
 int Quarter(int x, int y)
 {
 	int c;
-	if (x>0 && y>0)
+	if (x > 0 && y > 0)
 	{
 		return c = 1;
 	}
-	if (x>0 && y<0)
+	if (x > 0 && y < 0)
 	{
 		return c = 4;
 	}
-	if (x<0 && y<0)
+	if (x < 0 && y < 0)
 	{
 		return c = 3;
 	}
-	if (x<0 && y>0)
+	if (x < 0 && y>0)
 	{
 		return c = 2;
 	}
@@ -58,16 +60,16 @@ int Fact2(int n)
 	if (n % 2 > 0)
 	{
 
-		for (int i = 3; i < n; i+=2)
+		for (int i = 3; i <= n; i += 2)
 		{
 			c = c * i;
 		}
-		
+
 		return c;
 	}
 	if (n % 2 == 0)
 	{
-		for (int i = 2; i < n; i+=2)
+		for (int i = 2; i <= n; i += 2)
 		{
 			c = c * i;
 		}
@@ -89,10 +91,17 @@ int main()
 	switch (pynkt)
 	{
 	case 1:
-		cout << "Enter a number A="; cin >> A;
+		cout << "Enter five numbers:\n";
 
-		
-		cout <<"The third degree of the number "<< A <<" is equal to "<< PowerA3(A) << endl;
+		for (int  i = 0; i < 5; i++)
+		{
+			cin >> A;
+
+			cout << "The third degree of the number " << A << " is equal to " << PowerA3(A) << endl;
+			cout << "<====================>\n";
+
+		}
+
 		break;
 
 	case 2:
@@ -106,51 +115,64 @@ int main()
 
 	case 3:
 		int r1, r2;
-		cout << "Enter a small radius:"; cin >> r2;
-		cout << "Enter a bigger radius:"; cin >> r1;
-
-		cout << "Area of a ring is " << RingS(r1, r2) <<"\n"<< endl;
-
-		break;
-
-	case 4:
-		int n,k ;
-		cout << "Enter the coordinates of the poin:\n" << "X: "; cin >> n;
-		cout << "Y: "; cin >> k;
-
-		switch (Quarter(n,k))
+		cout << "Enter radiuses:\n\n";
+		for (int i = 0; i < 3; i++)
 		{
-		case 1:
-			cout << "The poin is locsted in the first coordinated qurter\n";
-			break;
+			cout << "Big radius: "; cin >> r1;
+			cout << "Small radius: "; cin >> r2;
+			cout << "\n";
+			cout << "Area of a ring is equel to " << RingS(r1, r2) << endl;
+			cout << "<=======================>\n";
 
-		case 2:
-			cout << "The poin is locsted in the second coordinated qurter\n";
-			break;
-
-		case 3:
-			cout << "The poin is locsted in the third coordinated qurter\n";
-			break;
-
-		case 4:
-			cout << "The poin is locsted in the fourth coordinated qurter\n";
-			break;
 		}
 
 		break;
 
+	case 4:
+		int n, k;
+		
+
+		for (int  i = 0; i < 3; i++)
+		{
+			cout << "Enter X coordinate: "; cin >> n;
+			cout << "Enter Y coordinate: "; cin >> k;
+			cout << "\n";
+			switch (Quarter(n, k))
+			{
+			case 1:
+				cout << "The poin is locsted in the first coordinated qurter\n\n";
+				break;
+
+			case 2:
+				cout << "The poin is locsted in the second coordinated qurter\n\n";
+				break;
+
+			case 3:
+				cout << "The poin is locsted in the third coordinated qurter\n\n";
+				break;
+
+			case 4:
+				cout << "The poin is locsted in the fourth coordinated qurter\n\n";
+				break;
+			}
+		}
+
+		
+		break;
+
 	case 5:
 		int N;
-		cout << "Enter a number \nN=";cin >> N;
+		cout << "Enter a number \nN="; cin >> N;
 
 		if (N % 2 > 0)
 		{
-			cout << "The number is odd, which means its factorial is "<< Fact2(N) << endl;
+			cout << "The number is odd, which means its factorial is " << Fact2(N) << endl;
 		}
 		else
 		{
 			cout << "The number is even, which means its factorial is " << Fact2(N) << endl;
 		}
+
 		break;
 
 	default:
