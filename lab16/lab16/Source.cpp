@@ -80,10 +80,11 @@ int main()
 
 		a[0] = A;
 		a[1] = B;
-
+		int c=A+B;
 		for (int i = 2; i < n; i++)
 		{
-			a[i] = a[i - 1] + a[i - 2];
+			a[i] = c;
+			c = c + a[i];
 		}
 
 		printArr(a, n);
@@ -123,10 +124,20 @@ int main()
 			cout << arr[i] << endl;
 		}
 
-		for (int i = n-1; i >= 0; i-=2)
+		if (n%2>0)
 		{
-			cout << arr[i] << endl;
+			for (int i = n - 1; i >= 0; i -= 2)
+			{
+				cout << arr[i] << endl;
+			}
 		}
+		else {
+			for (int i = n - 2; i >= 0; i -= 2)
+			{
+				cout << arr[i] << endl;
+			}
+		}
+
 		
 		delete[] arr;
 	}
