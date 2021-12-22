@@ -109,7 +109,7 @@ void Random(int pynkt)
 		cout << "Enter the size of the array "; cin >> n;
 		int* arr = new int[n];
 		randarr(arr, n);
-		for (int i = n; i > 1; i--)
+		for (int i = n-2; i > 1; i--)
 		{
 			if (arr[i] > arr[i - 1] && arr[i] > arr[i + 1])
 			{
@@ -234,7 +234,7 @@ void Hands(int pynkt)
 		cout << "Enter the size of the array "; cin >> n;
 		int* arr = new int[n];
 		putarr(arr, n);
-		for (int i = n; i > 1; i--)
+		for (int i = n-2; i > 1; i--)
 		{
 			if (arr[i] > arr[i - 1] && arr[i] > arr[i + 1])
 			{
@@ -263,6 +263,7 @@ void Hands(int pynkt)
 			{
 				if (arr[j]==arr[i])
 				{
+					c++;
 					cout << "Two identical elements have a value: " << arr[i] << endl;
 					cout << "Their numbers is " << j + 1 << " and " << i + 1 << " (But if we start from 0? their numbers well be " << j << " and " << i << ")" << endl;
 					break;
@@ -288,7 +289,7 @@ int main()
 	cout << "Chose the number of the item:\n" <<
 		"1.Arithmetic mean(K,L)\n" <<
 		"2.Different numbers and arithmetic mean\n" <<
-		"3.Even nambers\n" <<
+		"3.Even numbers\n" <<
 		"4.Local maximum number\n" <<
 		"5.Two identical elements" << endl; cin >> pynkt;
 	cout << "Select how you want the array to be filled:\nRandom\nHands" << endl; cin >> c;
