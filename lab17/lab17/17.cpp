@@ -5,14 +5,14 @@ using namespace std;
 
 void randarr(int* arr, int n)
 {
-	arr[0] = rand() % 15;
+	arr[0] = rand() % 20;
 	for (int i = 1; i < n; i++)
 	{
-		arr[i] = rand() % 15;
+		arr[i] = rand() % 20;
 		for (int j = 0; j < i; j++)
 		{
 			if (arr[j] == arr[i])
-				arr[i] = rand() % 15; 
+				arr[i] = rand() % 20; 
 			else
 			{
 				continue;
@@ -46,7 +46,7 @@ void Random(int pynkt)
 	{
 		int k, l;
 		cout << "Enter numbers K and L (L>K):" << endl; cin >> k >> l;
-		cout << "Enter the size of the array (N>L)"; cin >> n;
+		cout << "Enter the size of the array (N>L):"; cin >> n;
 		int* arr = new int[n];
 		randarr(arr, n);
 		int b=0;
@@ -80,7 +80,7 @@ void Random(int pynkt)
 		cout << endl;
 		if (d==0)
 		{
-			cout << "These numbers don't form an arithmetic progression" << endl;
+			cout << 0 << "\nThese numbers don't form an arithmetic progression" << endl;
 		}
 		else {
 			cout << "Differents of arithmetic progression is " << d << endl;
@@ -114,7 +114,7 @@ void Random(int pynkt)
 			if (arr[i] > arr[i - 1] && arr[i] > arr[i + 1])
 			{
 				cout << "The local maximum: " << arr[i] << endl;
-				cout << "It's number: " << i+1 << endl;
+				cout << "It's number: " << i + 1 << "\t(if we start from 0, then its number is " << i << ")" << endl;
 				break;
 			}
 			else
@@ -130,6 +130,7 @@ void Random(int pynkt)
 	{
 		cout << "Enter the size of the array "; cin >> n;
 		int* arr = new int[n];
+		int c=0;
 		for (int i = 0; i < n; i++)
 		{
 			arr[i] = rand() % 15;
@@ -142,11 +143,16 @@ void Random(int pynkt)
 			{
 				if (arr[j] == arr[i])
 				{
+					c++;
 					cout << "Two identical elements have a value: " << arr[i] << endl;
-					cout << "Their numbers is " << j+1 << " and " << i+1 << endl;
+					cout << "Their numbers is " << j + 1 << " and " << i + 1 << " (But if we start from 0? their numbers well be " << j << " and " << i << ")" << endl;
 					break;
 				}
 			}
+		}
+		if (c==0)
+		{
+			cout << "There are no identical numbers in the array." << endl;
 		}
 		delete[] arr;
 		break;
@@ -165,7 +171,7 @@ void Hands(int pynkt)
 	{
 		int k, l;
 		cout << "Enter numbers K and L (L>K):" << endl; cin >> k >> l;
-		cout << "Enter the size of the array (N>L)"; cin >> n;
+		cout << "Enter the size of the array (N>L):"; cin >> n;
 		int* arr = new int[n];
 		putarr(arr, n);
 		int b = 0;
@@ -199,7 +205,7 @@ void Hands(int pynkt)
 		cout << endl;
 		if (d == 0)
 		{
-			cout << "These numbers don't form an arithmetic progression" << endl;
+			cout << 0 << "\nThese numbers don't form an arithmetic progression " << endl;
 		}
 		else {
 			cout << "Differents of arithmetic progression is " << d << endl;
@@ -233,7 +239,7 @@ void Hands(int pynkt)
 			if (arr[i] > arr[i - 1] && arr[i] > arr[i + 1])
 			{
 				cout << "The local maximum: " << arr[i] << endl;
-				cout << "It's number: " << i+1 << endl;
+				cout << "It's number: " << i + 1 << "\t(if we start from 0, then its number is " << i << ")" << endl;
 				break;
 			}
 			else
@@ -249,6 +255,7 @@ void Hands(int pynkt)
 	{
 		cout << "Enter the size of the array "; cin >> n;
 		int* arr = new int[n];
+		int c = 0;
 		putarr(arr, n);
 		for (int i = 0; i < n; i++)
 		{
@@ -257,11 +264,15 @@ void Hands(int pynkt)
 				if (arr[j]==arr[i])
 				{
 					cout << "Two identical elements have a value: " << arr[i] << endl;
-					cout << "Their numbers is " << j+1 << " and " << i+1 << endl;
+					cout << "Their numbers is " << j + 1 << " and " << i + 1 << " (But if we start from 0? their numbers well be " << j << " and " << i << ")" << endl;
 					break;
 				}
 				
 			}
+		}
+		if (c == 0)
+		{
+			cout << "There are no identical numbers in the array." << endl;
 		}
 		delete[] arr;
 		break;
