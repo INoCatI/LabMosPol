@@ -1,0 +1,4 @@
+﻿  alg.cpp
+C:\Users\User\source\repos\Complexity\Complexity\alg.cpp(62,19): warning C4244: /=: преобразование "double" в "int", возможна потеря данных
+C:\Users\User\source\repos\Complexity\Complexity\alg.cpp(260,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  Complexity.vcxproj -> C:\Users\User\source\repos\Complexity\x64\Debug\Complexity.exe
